@@ -1,6 +1,16 @@
-version: "0.1.0"
+version: "3"
 services:
   browser-client:
     image: "browser_text_editor:0.3.0"
+    networks:
+      - textednet
+  gateway:
+    image: "text_editor_gateway:0.1.0"
+    networks:
+      - textednet
     ports:
       - "80:80"
+
+networks:
+  textednet:
+    driver: bridge
