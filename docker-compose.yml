@@ -1,0 +1,6 @@
+version: "0.1.0"
+services:
+  browser-client:
+    image: "browser_text_editor:0.3.0"
+    ports:
+      - "80:80"
