@@ -4,8 +4,12 @@ services:
     image: "browser_text_editor:0.3.0"
     networks:
       - textednet
+  file-store-api:
+    image: "file_storage_api:0.2.0"
+    networks:
+      - textednet
   gateway:
-    image: "text_editor_gateway:0.1.0"
+    image: "text_editor_gateway:0.2.0"
     networks:
       - textednet
     ports:
