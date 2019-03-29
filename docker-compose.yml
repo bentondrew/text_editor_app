@@ -1,7 +1,7 @@
 version: "3"
 services:
   browser-client:
-    image: "browser_text_editor:0.3.0"
+    image: "browser_text_editor:0.4.0"
     networks:
       - textednet
   file-store-api:
